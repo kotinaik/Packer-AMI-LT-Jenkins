@@ -3,8 +3,8 @@ pipeline {
 // veera
     environment {
         AWS_REGION = 'us-east-1'
-        LAUNCH_TEMPLATE_ID = 'lt-0b278bc499dab1ab0'
-        ASG_NAME = "packer-asg"
+        LAUNCH_TEMPLATE_ID = 'lt-0100c32842bdfd3bc'
+        ASG_NAME = "ASG"
         
     }
 
