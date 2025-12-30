@@ -67,7 +67,6 @@ pipeline {
               sh """
                 aws autoscaling start-instance-refresh \\
                   --auto-scaling-group-name ${ASG_NAME} \\
-                  //--preferences MinHealthyPercentage=50,InstanceWarmup=300 \\
                   --preferences '{"MinHealthyPercentage":50,"InstanceWarmup":300}' \\
                   --region ${AWS_REGION} \\
                   --query 'InstanceRefreshId' --output text
